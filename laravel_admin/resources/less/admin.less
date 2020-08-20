@@ -1,0 +1,32 @@
+
+// Bootstrap
+@import '~bootstrap/less/bootstrap';
+@import '~datatables.net-dt/css/jquery.dataTables.min.css';
+@import './component/base';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.box-header{
+  padding: 20px;
+}
+.dataTables_wrapper{
+  padding: 0 20px;
+
+  thead tr th:last-child, tbody tr td:last-child{
+    text-align: right;
+    padding-right: 2rem;
+  }
+
+  .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
+    color: #fff !important;
+    background: #337ab7;
+    border-color: #2e6da4;
+  }
+
+  .grid-action {
+    margin: 0 5px;
+  }
+}
